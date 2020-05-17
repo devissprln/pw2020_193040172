@@ -1,0 +1,14 @@
+..about-us{
+	height: 700px;
+	width: 100%;
+	background: url('../Assets/img/THEFOUNFDER2.jpg');
+}
+
+.container{
+	background-color: black;
+}
+
+
+#empty {
+	height: 100px;
+}
