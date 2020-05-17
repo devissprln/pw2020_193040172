@@ -45,8 +45,10 @@ if (isset($_POST['ubah'])) {
     <input type="hidden" name="id" id="id" value="<?= $mkn['id']; ?>">
     <ul>
       <li>
-        <label for="gambar">gambar</label><br>
-        <input type="text" name="gambar" id="gambar" required value="<?= $mkn['gambar']; ?>"><br><br>
+        <input type="file" name="gambar" class="gambar" id="gambar_lama" required value="<?= $mkn['gambar']; ?>" onchange="previewImage()"><br><br>
+        <label for="gambar">gambar<br>
+        </label>
+        <img src="../assets/img/<?= $mkn['gambar']; ?>" width="120" style="display: block;" class="img-preview">
       </li>
       <li>
         <label for="jenis_makanan">Jenis Makanan</label><br>
@@ -67,10 +69,12 @@ if (isset($_POST['ubah'])) {
       <br>
       <button type=" submit" name="ubah">Ubah Data!</button>
       <button type="submit">
-        <a href="index.php" style="text-decoration: none; color: black;">Kembali</a>
+        <a href="admin.php" style="text-decoration: none; color: black;">Kembali</a>
       </button>
     </ul>
   </form>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

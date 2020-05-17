@@ -47,7 +47,7 @@ if (isset($_POST['register'])) {
             <input type="password" name="password" class="form-control rounded-0" id="password">
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password">Konfirmasi Password</label>
             <input type="password" name="password" class="form-control rounded-0" id="password">
           </div>
           <br>

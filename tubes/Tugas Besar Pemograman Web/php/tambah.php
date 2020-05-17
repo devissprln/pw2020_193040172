@@ -43,7 +43,6 @@ if (isset($_POST['tambah'])) {
   <div class="container col-6 mt-5">>
 
 
-
     <form action="" method="POST">
       <div class="form-group">
         <div class="card rounded-0">
@@ -53,23 +52,39 @@ if (isset($_POST['tambah'])) {
           <div class="card-body">
             <form action="" method="POST">
               <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" name="username" class="form-control rounded-0" id="username" autofocus required>
+                <label for="username">
+                  Gambar :
+                  <input type="file" name="gambar" class="gambar" onchange="previewImage()">
+                </label>
+                <img src="../assets/img/nophoto.jpg" width="120" style="display: block;" class="img-preview">
               </div>
               <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" name="password" class="form-control rounded-0" id="password">
+                <label for="jenis_makanan">Jenis Makanan</label>
+                <input type="text" name="jenis makanan" class="form-control rounded-0" id="jenis makanan" required autofocus><br><br>
               </div>
-              <div class="form-group form-check">
+              <div class="form-group">
+                <label for="kelompok_makanan">Kelompok Makanan</label>
+                <input type="text" name="kelompok makanan" class="form-control rounded-0" id="kelompok makanan" autofocus required>
+              </div>
+              <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <input type="text" name="kategori" class="form-control rounded-0" id="kategori" required><br><br>
+              </div>
+              <div class="form-group">
+                <label for="harga">Harga</label>
+                <input type="text" name="harga" class="form-control rounded-0" id="harga" required><br><br>
+              </div>
+              <!-- <div class="form-group form-check">
                 <input type="checkbox" name="remember" class="form-check-input" id="remember">
                 <label class="form-check-label" for="remember">Remember me</label>
               </div>
               <button type="submit" name="submit" class="btn btn-primary float-right rounded-0 mt-n2">Login</button>
             </form>
-            <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p>
+            <p>Belum punya akun? Registrasi <a href="registrasi.php">Disini</a></p> -->
           </div>
     </form>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
